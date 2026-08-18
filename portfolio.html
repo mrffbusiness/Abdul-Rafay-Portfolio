@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="data.js"></script>
+<script src="theme.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Abdul Rafay</title>
+<meta name="description" content="Selected video editing work by Abdul Rafay — YouTube long-form, short-form reels, and color grading & sound design.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient drifting background -->
+<div class="ambient" aria-hidden="true">
+  <div class="blob blob--1"></div>
+  <div class="blob blob--2"></div>
+  <div class="blob blob--3"></div>
+  <div class="blob blob--4"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <a href="index.html" class="logo">ABDUL<span class="dot">.</span>RAFAY</a>
+
+  <nav class="nav-links">
+    <a href="index.html#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html" class="is-current">Portfolio</a>
+    <a href="awards.html">Awards</a>
+    <a href="index.html#testimonials">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="contact.html" class="nav-cta">Let's Talk</a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html#home">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="awards.html">Awards</a>
+  <a href="index.html#testimonials">Testimonials</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+</div>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="folio-hero">
+  <div class="folio-hero-inner reveal">
+    <span class="eyebrow" style="justify-content:center; display:flex;">00:02:00:00 <em>— Full Portfolio</em></span>
+    <h1 class="section-title">Selected <span>Work</span></h1>
+    <p class="section-sub">Every project below is a placeholder — real thumbnails, titles and links will be uploaded through the Admin Panel.</p>
+  </div>
+</section>
+
+<!-- ============ FILTER TABS ============ -->
+<div class="filter-bar reveal">
+  <div class="filter-tabs" id="filterTabs">
+    <span class="filter-tab-bg" id="filterBg"></span>
+    <button class="filter-tab active" data-filter="all">All Work</button>
+    <button class="filter-tab" data-filter="longform">YouTube Long-Form</button>
+    <button class="filter-tab" data-filter="shortform">Short-Form Reels</button>
+    <button class="filter-tab" data-filter="color">Color Grading &amp; Sound Design</button>
+  </div>
+</div>
+
+<!-- ============ PROJECT GRID ============ -->
+<section class="folio-grid-wrap">
+  <div class="folio-grid" id="folioGrid">
+    <!-- Populated dynamically from Portfolio data by content-loader.js -->
+  </div>
+</section>
+
+<!-- ============ CLOSING CTA (reuse home style) ============ -->
+<section class="cta-close">
+  <div class="cta-box reveal">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <span class="eyebrow" style="justify-content:center; display:flex;">00:03:00:00 <em>— Let's Talk</em></span>
+    <h2 class="cta-title">Like What<br>You See?</h2>
+    <p class="cta-sub">Send over your project details and I'll get back to you within a day.</p>
+    <div class="cta-actions">
+      <a href="mailto:hello@abdulrafay.com" class="btn btn-primary js-email-link">
+        Email Me
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-outline">Back To Home</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">ABDUL<span class="dot">.</span>RAFAY</a>
+      <p class="footer-tagline">Turning raw footage into stories that hook. Video editing &amp; content creation.</p>
+    </div>
+
+    <div>
+      <h4 class="footer-heading">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="awards.html">Awards</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="footer-heading">More</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:hello@abdulrafay.com" class="js-email-link">Email</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="footer-heading">Follow</h4>
+      <div class="social-row">
+        <a href="#" class="social-icon js-social-instagram" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 2.1.26 2.6.46.6.24 1.1.55 1.6 1.05.5.5.8 1 1.05 1.6.2.5.4 1.4.46 2.6.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.26 2.1-.46 2.6-.24.6-.55 1.1-1.05 1.6-.5.5-1 .8-1.6 1.05-.5.2-1.4.4-2.6.46-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-2.1-.26-2.6-.46a4.3 4.3 0 0 1-1.6-1.05 4.3 4.3 0 0 1-1.05-1.6c-.2-.5-.4-1.4-.46-2.6C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.26-2.1.46-2.6.24-.6.55-1.1 1.05-1.6.5-.5 1-.8 1.6-1.05.5-.2 1.4-.4 2.6-.46C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-1 .05-1.6.2-1.97.34-.5.19-.85.42-1.22.8-.38.37-.6.72-.8 1.22-.13.37-.29.96-.34 1.97C2.8 8.48 2.8 8.85 2.8 12s0 3.52.07 4.76c.05 1 .2 1.6.34 1.97.19.5.42.85.8 1.22.37.38.72.6 1.22.8.37.13.96.29 1.97.34C7.48 21.2 7.85 21.2 11 21.2h1c3.15 0 3.52 0 4.76-.07 1-.05 1.6-.2 1.97-.34.5-.19.85-.42 1.22-.8.38-.37.6-.72.8-1.22.13-.37.29-.96.34-1.97.07-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.05-1-.2-1.6-.34-1.97a3.1 3.1 0 0 0-.8-1.22 3.1 3.1 0 0 0-1.22-.8c-.37-.13-.96-.29-1.97-.34C15.52 4 15.15 4 12 4zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm4.8-2a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16z"/></svg></a>
+        <a href="#" class="social-icon js-social-youtube" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 12s0-3.2-.4-4.7a3 3 0 0 0-2.1-2.1C18 4.8 12 4.8 12 4.8s-6 0-7.5.4A3 3 0 0 0 2.4 7.3C2 8.8 2 12 2 12s0 3.2.4 4.7a3 3 0 0 0 2.1 2.1c1.5.4 7.5.4 7.5.4s6 0 7.5-.4a3 3 0 0 0 2.1-2.1C22 15.2 22 12 22 12zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2 4.03 0 4.78 2.65 4.78 6.1V21H17V15.6c0-1.3-.02-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.86V21H9z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Abdul Rafay. All rights reserved.</span>
+    <span><a href="index.html">Home</a></span>
+    <span><a href="admin/login.html" style="opacity:.6;">Admin</a></span>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-box">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="lightbox-media">
+      <div class="folio-thumb-bg" id="lightboxImg"></div>
+    </div>
+    <div class="lightbox-info">
+      <div class="lightbox-cat" id="lightboxCat"></div>
+      <h3 class="lightbox-title" id="lightboxTitle"></h3>
+      <p class="lightbox-desc" id="lightboxDesc"></p>
+    </div>
+  </div>
+</div>
+
+<script src="content-loader.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
